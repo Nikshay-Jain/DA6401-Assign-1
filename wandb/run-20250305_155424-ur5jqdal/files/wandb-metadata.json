@@ -1,0 +1,31 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.11.0",
+  "startedAt":  "2025-03-05T10:24:24.211665Z",
+  "program":  "c:\\Users\\niksh\\Desktop\\Assign 1\\src\\dataset.py",
+  "codePath":  "src\\dataset.py",
+  "git":  {
+    "remote":  "https://github.com/Nikshay-Jain/DA6401-Assign-1.git",
+    "commit":  "78725eef7d6e371457c10e3bdf78d2dc590cac0f"
+  },
+  "email":  "mm21b044@smail.iitm.ac.in",
+  "root":  "C:\\Users\\niksh\\Desktop\\Assign 1",
+  "host":  "Nikshay",
+  "executable":  "C:\\Users\\niksh\\Desktop\\Assign 1\\venv\\Scripts\\python.exe",
+  "codePathLocal":  "src\\dataset.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "511094099968",
+      "used":  "102296383488"
+    }
+  },
+  "memory":  {
+    "total":  "8415662080"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  }
+}
