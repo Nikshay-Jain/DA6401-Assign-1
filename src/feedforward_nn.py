@@ -1,3 +1,5 @@
+# Quuestion 2:
+
 import numpy as np
 import wandb
 from wandb_setup import setup_wandb
