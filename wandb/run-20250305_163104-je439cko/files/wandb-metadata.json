@@ -1,0 +1,31 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.11.0",
+  "startedAt":  "2025-03-05T11:01:04.579165Z",
+  "program":  "c:\\Users\\niksh\\Desktop\\Assign 1\\src\\feedforward_nn.py",
+  "codePath":  "src\\feedforward_nn.py",
+  "git":  {
+    "remote":  "https://github.com/Nikshay-Jain/DA6401-Assign-1.git",
+    "commit":  "dbe542e0c0931e5fc412e70724f04834b4f4898c"
+  },
+  "email":  "mm21b044@smail.iitm.ac.in",
+  "root":  "C:\\Users\\niksh\\Desktop\\Assign 1",
+  "host":  "Nikshay",
+  "executable":  "C:\\Users\\niksh\\Desktop\\Assign 1\\venv\\Scripts\\python.exe",
+  "codePathLocal":  "src\\feedforward_nn.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "511094099968",
+      "used":  "102611279872"
+    }
+  },
+  "memory":  {
+    "total":  "8415662080"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  }
+}

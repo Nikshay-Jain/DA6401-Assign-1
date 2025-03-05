@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\feedforward_nn.py", line 92, in <module>
+    train_nn(x_train, y_train, params, epochs=config.epochs, learning_rate=config.learning_rate, batch_size=config.batch_size)
+TypeError: train_nn() got an unexpected keyword argument 'learning_rate'
