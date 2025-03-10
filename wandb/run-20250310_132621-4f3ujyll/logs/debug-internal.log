@@ -5,3 +5,26 @@
 {"time":"2025-03-10T13:26:21.2060673+05:30","level":"INFO","msg":"sender: started","stream_id":"4f3ujyll"}
 {"time":"2025-03-10T13:26:21.2060673+05:30","level":"INFO","msg":"handler: started","stream_id":"4f3ujyll"}
 {"time":"2025-03-10T13:26:21.7984722+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T16:45:04.4597534+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mm21b044-indian-institute-of-technology-madras/DL-Assign-1/4f3ujyll/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T17:15:30.4926847+05:30","level":"WARN","msg":"sender: taking a long time","seconds":1826.3569455,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"irplo2qi14sj\"  connection_id:\"127.0.0.1:52384\")"}
+{"time":"2025-03-10T17:15:30.7205397+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-10T17:15:30.9216704+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mm21b044-indian-institute-of-technology-madras/DL-Assign-1/4f3ujyll/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T17:15:44.1393256+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.13.249:52540->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-10T17:15:49.4408164+05:30","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":1845.3547631,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"irplo2qi14sj\"  connection_id:\"127.0.0.1:52384\")"}
+{"time":"2025-03-10T17:51:19.0279475+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mm21b044-indian-institute-of-technology-madras/DL-Assign-1/4f3ujyll/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-10T17:51:21.9685437+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.13.249:61200->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-03-10T19:04:16.9139889+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mm21b044-indian-institute-of-technology-madras/DL-Assign-1/4f3ujyll/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T19:04:18.8723691+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.13.249:54535->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-03-10T19:04:19.1179854+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mm21b044-indian-institute-of-technology-madras/DL-Assign-1/4f3ujyll/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T21:47:03.1436835+05:30","level":"WARN","msg":"sender: taking a long time","seconds":9764.2423236,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"qnl3f0che609\"  connection_id:\"127.0.0.1:52384\")"}
+{"time":"2025-03-10T21:47:03.3285151+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T21:47:03.7784266+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mm21b044-indian-institute-of-technology-madras/DL-Assign-1/4f3ujyll/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T21:47:08.2360653+05:30","level":"INFO","msg":"sender: succeeded after taking longer than expected","seconds":9769.9030184,"work":"WorkRecord(*service_go_proto.Request_StopStatus); Control(local:true  mailbox_slot:\"qnl3f0che609\"  connection_id:\"127.0.0.1:52384\")"}
+{"time":"2025-03-10T23:17:57.7808795+05:30","level":"INFO","msg":"stream: closing","id":"4f3ujyll"}
+{"time":"2025-03-10T23:17:57.7821814+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T23:17:57.8005421+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T23:17:59.6030507+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T23:17:59.9950763+05:30","level":"INFO","msg":"handler: closed","stream_id":"4f3ujyll"}
+{"time":"2025-03-10T23:17:59.9956583+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"4f3ujyll"}
+{"time":"2025-03-10T23:18:00.0013619+05:30","level":"INFO","msg":"sender: closed","stream_id":"4f3ujyll"}
+{"time":"2025-03-10T23:18:00.0016931+05:30","level":"INFO","msg":"stream: closed","id":"4f3ujyll"}

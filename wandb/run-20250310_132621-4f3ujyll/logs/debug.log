@@ -20,3 +20,4 @@ config: {'wandb_project': 'DL-Assign-1', 'wandb_entity': 'mm21b044', 'dataset': 
 2025-03-10 13:26:21,915 INFO    MainThread:3776 [wandb_run.py:_redirect():2292] Wrapping output streams.
 2025-03-10 13:26:21,916 INFO    MainThread:3776 [wandb_run.py:_redirect():2315] Redirects installed.
 2025-03-10 13:26:21,919 INFO    MainThread:3776 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-10 23:17:57,742 INFO    MsgRouterThr:3776 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.
