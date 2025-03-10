@@ -1,6 +1,6 @@
 import wandb, argparse
 from supporting_funcs import *
-from arch import *
+from model_arch import *
 from wandb_setup import setup_wandb
 
 def main(args):

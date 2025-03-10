@@ -95,7 +95,7 @@ def get_loss(loss='cross_entropy'):
     
     return crossentropy
 
-def get_loss_derivative(loss):
+def get_diff_loss(loss):
     def SE_d(y_in,y_pred_in):
         def indicator(i,j):
                 if i==j:

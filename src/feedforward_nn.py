@@ -2,7 +2,7 @@
 
 import numpy as np
 import wandb
-from funcs import *
+from supporting_funcs import *
 from wandb_setup import setup_wandb
 
 # Initialize Weights & Biases
