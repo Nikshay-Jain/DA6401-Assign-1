@@ -1,0 +1,16 @@
+{"time":"2025-03-05T18:50:17.7854651+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250305_185017-cwulkcpm\\logs\\debug-core.log"}
+{"time":"2025-03-05T18:50:17.9494844+05:30","level":"INFO","msg":"created new stream","id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:17.9494844+05:30","level":"INFO","msg":"stream: started","id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:17.9512691+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:17.9522875+05:30","level":"INFO","msg":"sender: started","stream_id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:17.9522875+05:30","level":"INFO","msg":"handler: started","stream_id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:18.6550064+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T18:50:19.2194544+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-05T18:50:19.2213781+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-05T18:50:20.244576+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-metadata.json","runtime_seconds":1.188464,"progress":"841B/841B"},{"desc":"uploading output.log","runtime_seconds":0.14377},{"desc":"uploading wandb-summary.json","runtime_seconds":0.14377,"progress":"24B/24B"}],"total_operations":3}}
+{"time":"2025-03-05T18:50:22.0548992+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-05T18:50:22.5780423+05:30","level":"INFO","msg":"stream: closing","id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:22.5780423+05:30","level":"INFO","msg":"handler: closed","stream_id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:22.5780423+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:22.5798325+05:30","level":"INFO","msg":"sender: closed","stream_id":"cwulkcpm"}
+{"time":"2025-03-05T18:50:22.5798325+05:30","level":"INFO","msg":"stream: closed","id":"cwulkcpm"}

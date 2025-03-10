@@ -1,0 +1,106 @@
+2025-03-05 17:02:00,753 INFO    Thread-59 (_run_job):6460 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-05 17:02:00,754 INFO    Thread-59 (_run_job):6460 [wandb_setup.py:_flush():67] Configure stats pid to 6460
+2025-03-05 17:02:00,755 INFO    Thread-59 (_run_job):6460 [wandb_setup.py:_flush():67] Loading settings from C:\Users\niksh\.config\wandb\settings
+2025-03-05 17:02:00,755 INFO    Thread-59 (_run_job):6460 [wandb_setup.py:_flush():67] Loading settings from C:\Users\niksh\Desktop\Assign 1\wandb\settings
+2025-03-05 17:02:00,756 INFO    Thread-59 (_run_job):6460 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-05 17:02:00,757 INFO    Thread-59 (_run_job):6460 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\niksh\Desktop\Assign 1\wandb\run-20250305_170200-2rx1ghsa\logs\debug.log
+2025-03-05 17:02:00,759 INFO    Thread-59 (_run_job):6460 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\niksh\Desktop\Assign 1\wandb\run-20250305_170200-2rx1ghsa\logs\debug-internal.log
+2025-03-05 17:02:00,760 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():761] calling init triggers
+2025-03-05 17:02:00,760 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 32, 'epochs': 5, 'hidden_layers': [64, 64], 'learning_rate': 0.0001, 'optimizer': 'sgd', 'weight_decay': 0.0005, 'weight_init': 'random'}
+config: {'_wandb': {}}
+2025-03-05 17:02:00,761 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():784] starting backend
+2025-03-05 17:02:00,761 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():788] sending inform_init request
+2025-03-05 17:02:00,771 INFO    Thread-59 (_run_job):6460 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-05 17:02:00,771 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():798] backend started and connected
+2025-03-05 17:02:00,774 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 32, 'epochs': 5, 'hidden_layers': [64, 64], 'learning_rate': 0.0001, 'optimizer': 'sgd', 'weight_decay': 0.0005, 'weight_init': 'random'}
+2025-03-05 17:02:00,776 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():891] updated telemetry
+2025-03-05 17:02:00,979 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-05 17:02:01,674 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():990] starting run threads in backend
+2025-03-05 17:02:02,052 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-05 17:02:02,053 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-05 17:02:02,053 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-05 17:02:02,053 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-05 17:02:02,054 INFO    Thread-59 (_run_job):6460 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-05 17:02:24,890 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_finish():2112] finishing run mm21b044-indian-institute-of-technology-madras/DL-Assign-1/2rx1ghsa
+2025-03-05 17:02:24,891 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-05 17:02:24,891 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_restore():2322] restore
+2025-03-05 17:02:24,892 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_restore():2328] restore done
+2025-03-05 17:55:37,930 INFO    Thread-8 (_heartbeat):6460 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 961, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000019D3F1D6890>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019D3F1D6890>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\lib\retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\internal\internal_api.py", line 398, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000019D3F1D6890>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+2025-03-05 17:56:28,493 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-05 17:56:28,494 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-05 17:56:28,498 INFO    Thread-59 (_run_job):6460 [wandb_run.py:_footer_sync_info():3917] logging synced files

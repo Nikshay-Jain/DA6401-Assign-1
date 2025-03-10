@@ -1,0 +1,16 @@
+{"time":"2025-03-05T16:58:00.9715206+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250305_165800-olnjrmqi\\logs\\debug-core.log"}
+{"time":"2025-03-05T16:58:01.1441078+05:30","level":"INFO","msg":"created new stream","id":"olnjrmqi"}
+{"time":"2025-03-05T16:58:01.1441078+05:30","level":"INFO","msg":"stream: started","id":"olnjrmqi"}
+{"time":"2025-03-05T16:58:01.1441078+05:30","level":"INFO","msg":"handler: started","stream_id":"olnjrmqi"}
+{"time":"2025-03-05T16:58:01.1447162+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"olnjrmqi"}
+{"time":"2025-03-05T16:58:01.1441078+05:30","level":"INFO","msg":"sender: started","stream_id":"olnjrmqi"}
+{"time":"2025-03-05T16:58:01.8414029+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T16:59:16.138993+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-05T16:59:16.1491872+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-05T16:59:17.1504799+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.2583474}],"total_operations":1}}
+{"time":"2025-03-05T16:59:18.2876849+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-05T16:59:19.1876942+05:30","level":"INFO","msg":"stream: closing","id":"olnjrmqi"}
+{"time":"2025-03-05T16:59:19.188989+05:30","level":"INFO","msg":"handler: closed","stream_id":"olnjrmqi"}
+{"time":"2025-03-05T16:59:19.188989+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"olnjrmqi"}
+{"time":"2025-03-05T16:59:19.188989+05:30","level":"INFO","msg":"sender: closed","stream_id":"olnjrmqi"}
+{"time":"2025-03-05T16:59:19.1899878+05:30","level":"INFO","msg":"stream: closed","id":"olnjrmqi"}

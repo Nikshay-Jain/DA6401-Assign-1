@@ -1,7 +1,8 @@
-# Quuestion 2:
+# Question 2:
 
 import numpy as np
 import wandb
+from funcs import *
 from wandb_setup import setup_wandb
 
 # Initialize Weights & Biases
@@ -13,12 +14,6 @@ config.update({
     "batch_size": 64,
     "hidden_layers": [128, 64]
 })
-
-def load_fashion_mnist():
-    with np.load("fashion-mnist.npz") as data:
-        x_train, y_train = data["x_train"], data["y_train"]
-        x_test, y_test = data["x_test"], data["y_test"]
-    return (x_train, y_train), (x_test, y_test)
 
 # Activation functions
 def relu(x):
@@ -87,7 +82,7 @@ def predict(x, params):
     return np.argmax(a[-1], axis=1)
 
 # Load data
-(x_train, y_train), (x_test, y_test) = load_fashion_mnist()
+(x_train, y_train), (x_test, y_test) = load_dataset()
 
 # Initialize params and train nn
 params = init_nn(input_size=28*28, hidden_layers=[128, 64], output_size=10)

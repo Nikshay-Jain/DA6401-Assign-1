@@ -1,0 +1,11 @@
+Epoch 1/10, Accuracy: 0.2356
+Epoch 2/10, Accuracy: 0.2560
+Epoch 3/10, Accuracy: 0.3514
+Epoch 4/10, Accuracy: 0.2673
+Epoch 5/10, Accuracy: 0.2936
+Epoch 6/10, Accuracy: 0.4274
+Epoch 7/10, Accuracy: 0.4414
+Epoch 8/10, Accuracy: 0.5295
+Epoch 9/10, Accuracy: 0.5596
+Epoch 10/10, Accuracy: 0.5976
+Test Accuracy: 0.6040

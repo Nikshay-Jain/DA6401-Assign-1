@@ -1,0 +1,6 @@
+Epoch 1/5, Accuracy: 0.3856
+Epoch 2/5, Accuracy: 0.4019
+Epoch 3/5, Accuracy: 0.4303
+Epoch 4/5, Accuracy: 0.4486
+Epoch 5/5, Accuracy: 0.4653
+Test Accuracy: 0.4694

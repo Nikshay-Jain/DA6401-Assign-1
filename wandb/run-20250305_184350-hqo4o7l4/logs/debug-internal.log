@@ -1,0 +1,16 @@
+{"time":"2025-03-05T18:43:50.4336196+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250305_184350-hqo4o7l4\\logs\\debug-core.log"}
+{"time":"2025-03-05T18:43:50.568635+05:30","level":"INFO","msg":"created new stream","id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:50.5692584+05:30","level":"INFO","msg":"handler: started","stream_id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:50.5692584+05:30","level":"INFO","msg":"sender: started","stream_id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:50.5692584+05:30","level":"INFO","msg":"stream: started","id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:50.5692584+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:51.6305117+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T18:43:52.0553914+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-05T18:43:52.0569938+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-05T18:43:53.0731023+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading data","runtime_seconds":0.2454424},{"desc":"updating run config","runtime_seconds":0.2364284}],"total_operations":2}}
+{"time":"2025-03-05T18:43:54.0748487+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-05T18:43:54.8087201+05:30","level":"INFO","msg":"stream: closing","id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:54.8087201+05:30","level":"INFO","msg":"handler: closed","stream_id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:54.8087201+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:54.8087201+05:30","level":"INFO","msg":"sender: closed","stream_id":"hqo4o7l4"}
+{"time":"2025-03-05T18:43:54.8087201+05:30","level":"INFO","msg":"stream: closed","id":"hqo4o7l4"}
