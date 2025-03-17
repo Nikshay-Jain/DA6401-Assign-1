@@ -13,7 +13,7 @@ Multi class classification neural netwrok coded from scratch for the fashion-mni
 - Select the main directory as your working directory which has the following contents:
 
     ```
-    Assign 1
+    A1_MM21B044
     ├── src/                      # source folder for all codes
     │   ├── dataset.py            # prepares dataset
     │   ├── model_arch.txt        # contains code for the model
