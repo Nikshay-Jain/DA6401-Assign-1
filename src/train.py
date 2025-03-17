@@ -3,21 +3,20 @@ from model_arch import *
 from wandb_setup import *
 from supporting_funcs import *
 
-def log_metrics(epoch, loss, accuracy):
+def log_metrics(loss, accuracy):
     wandb.log({
-        "epoch": epoch,
         "train_loss": loss,
-        "val_accuracy": accuracy
+        "train_accuracy": accuracy
     })
 
 def train():
-    setup_wandb()  # Initialize Weights & Biases using the separate setup function
+    setup_wandb()              # Initialize Weights & Biases using the separate setup function
     config = wandb.config
 
     # Load dataset
     (X_train, y_train), (X_test, y_test) = load_dataset()
-    X_train, y_train = Preprocess(X_train, y_train)  # Preprocess training data
-    X_test, y_test = Preprocess(X_test, y_test)  # Preprocess test data
+    X_train, y_train = Preprocess(X_train, y_train)     # Preprocess training data
+    X_test, y_test = Preprocess(X_test, y_test)         # Preprocess test data
 
     # Initialize optimizer
     optimizer = optimizers(
@@ -60,12 +59,11 @@ def train():
             optimizer.NAdam((X_train, y_train), (X_test, y_test), beta1=config.beta1, beta2=config.beta2, epsilon=config.epsilon)
     else:
         raise ValueError(f"Unsupported optimizer: {config.optimizer}")
-
-    # Train the model
-    for epoch in range(config.epochs):
-        loss, accuracy = optimizer.iterate(updator, X_train, y_train, testdat=(X_test, y_test))
-        log_metrics(epoch, loss, accuracy)      # Log each epoch's train loss & accuracy
-        wandb.log({"test_accuracy": optimizer.model.compute_accuracy(X_test, y_test), "_timestamp": datetime.datetime.now().timestamp()})
+    
+    loss, accuracy = optimizer.iterate(updator, X_train, y_train, testdat=(X_test, y_test))
+    log_metrics(loss, accuracy)
+    wandb.log({"test_accuracy": optimizer.model.compute_accuracy(X_test, y_test), "_timestamp": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')})
+    
     return optimizer
 
 def main(args):
@@ -111,7 +109,7 @@ def main(args):
                 epsilon=config.epsilon)
     
     # Log final test accuracy
-    wandb.log({"test_accuracy": opt.model.compute_accuracy(X_test, y_test), "_timestamp": datetime.datetime.now().timestamp()})
+    wandb.log({"test_accuracy": opt.model.compute_accuracy(X_test, y_test), "_timestamp": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')})
     opt.model.plot_confusion_matrix(X_test, y_test)
     opt.model.compare_losses(X_test, y_test)
     return opt.model.predict(X_test, config.probab)
@@ -157,11 +155,11 @@ if __name__ == "__main__":
             "loss": {"values": ["cross_entropy", "mse"]},
             "optimizer": {"values": ["sgd", "nesterov", "rmsprop", "momentum", "adam", "nadam"]},
             "learning_rate": {"values": [0.001, 0.0001]},
-            "batch_size": {"values": [16, 32, 64]},
+            "batch_size": {"values": [32, 64, 128]},
             "epochs": {"values": [10, 20]},
             "weight_decay": {"values": [0, 0.0005, 0.001, 0.5]}
         }
     }
     sweep_id = wandb.sweep(sweep_config, project=args.wandb_project)
-    wandb.agent(sweep_id, function=train, count=1)  # Run 1 experiments
+    wandb.agent(sweep_id, function=train, count=2)  # Run 1 experiments
     main(args)

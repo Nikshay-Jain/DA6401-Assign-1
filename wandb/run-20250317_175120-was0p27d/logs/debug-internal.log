@@ -1,0 +1,16 @@
+{"time":"2025-03-17T17:51:20.986769+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_175120-was0p27d\\logs\\debug-core.log"}
+{"time":"2025-03-17T17:51:22.4677659+05:30","level":"INFO","msg":"created new stream","id":"was0p27d"}
+{"time":"2025-03-17T17:51:22.4677659+05:30","level":"INFO","msg":"stream: started","id":"was0p27d"}
+{"time":"2025-03-17T17:51:22.5049114+05:30","level":"INFO","msg":"handler: started","stream_id":"was0p27d"}
+{"time":"2025-03-17T17:51:22.5069211+05:30","level":"INFO","msg":"sender: started","stream_id":"was0p27d"}
+{"time":"2025-03-17T17:51:22.5259939+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"was0p27d"}
+{"time":"2025-03-17T17:51:23.8742659+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T17:51:28.386278+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T17:51:29.0150474+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T17:51:29.0417817+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-03-17T17:51:30.8829529+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T17:51:31.5354496+05:30","level":"INFO","msg":"stream: closing","id":"was0p27d"}
+{"time":"2025-03-17T17:51:31.5636913+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"was0p27d"}
+{"time":"2025-03-17T17:51:31.5636913+05:30","level":"INFO","msg":"sender: closed","stream_id":"was0p27d"}
+{"time":"2025-03-17T17:51:31.6145467+05:30","level":"INFO","msg":"handler: closed","stream_id":"was0p27d"}
+{"time":"2025-03-17T17:51:31.6145467+05:30","level":"INFO","msg":"stream: closed","id":"was0p27d"}

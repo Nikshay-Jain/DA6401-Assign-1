@@ -1,0 +1,29 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.11.0",
+  "startedAt":  "2025-03-17T12:21:00.008210Z",
+  "program":  "c:\\Users\\niksh\\Desktop\\Assign 1\\src\\train.py",
+  "codePath":  "src\\train.py",
+  "git":  {
+    "remote":  "https://github.com/Nikshay-Jain/DA6401-Assign-1.git",
+    "commit":  "c6007527459220de6e944f21958eee68c183abf4"
+  },
+  "email":  "mm21b044@smail.iitm.ac.in",
+  "root":  "C:\\Users\\niksh\\Desktop\\Assign 1",
+  "host":  "Nikshay",
+  "executable":  "C:\\Users\\niksh\\Desktop\\Assign 1\\venv\\Scripts\\python.exe",
+  "codePathLocal":  "src\\train.py",
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "511094099968",
+      "used":  "137598603264"
+    }
+  },
+  "memory":  {
+    "total":  "8415662080"
+  },
+  "cpu":  {
+    "countLogical":  8
+  }
+}

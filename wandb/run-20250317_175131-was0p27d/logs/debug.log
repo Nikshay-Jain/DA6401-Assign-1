@@ -1,0 +1,19 @@
+2025-03-17 17:51:31,436 INFO    MainThread:12748 [wandb_init.py:setup_run_log_directory():647] Logging user logs to C:\Users\niksh\Desktop\Assign 1\wandb\run-20250317_175131-was0p27d\logs\debug.log
+2025-03-17 17:51:31,486 INFO    MainThread:12748 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to C:\Users\niksh\Desktop\Assign 1\wandb\run-20250317_175131-was0p27d\logs\debug-internal.log
+2025-03-17 17:51:31,486 INFO    MainThread:12748 [wandb_init.py:init():761] calling init triggers
+2025-03-17 17:51:31,488 INFO    MainThread:12748 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 32, 'epochs': 10, 'hidden_size': 32, 'learning_rate': 0.001, 'loss': 'cross_entropy', 'num_layers': 3, 'optimizer': 'sgd', 'weight_decay': 0, 'weight_init': 'he'}
+config: {'wandb_project': 'DL-Assign-1', 'wandb_entity': 'mm21b044', 'dataset': 'fashion_mnist', 'epochs': 40, 'batch_size': 32, 'loss': 'cross_entropy', 'optimizer': 'nadam', 'learning_rate': 0.0001, 'momentum': 0.9, 'beta': 0.9, 'beta1': 0.9, 'beta2': 0.999, 'epsilon': 1e-10, 'weight_decay': 0, 'weight_init': 'He', 'num_layers': 3, 'hidden_size': 512, 'activation': 'relu', 'earlystop': True, 'logger': True, 'mode': 'test', 'probab': True, '_wandb': {}}
+2025-03-17 17:51:31,495 INFO    MainThread:12748 [wandb_init.py:init():784] starting backend
+2025-03-17 17:51:31,495 INFO    MainThread:12748 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 17:51:31,506 INFO    MainThread:12748 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-03-17 17:51:31,506 INFO    MainThread:12748 [wandb_init.py:init():798] backend started and connected
+2025-03-17 17:51:31,513 INFO    MainThread:12748 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 32, 'epochs': 10, 'hidden_size': 32, 'learning_rate': 0.001, 'loss': 'cross_entropy', 'num_layers': 3, 'optimizer': 'sgd', 'weight_decay': 0, 'weight_init': 'he'}
+2025-03-17 17:51:31,516 INFO    MainThread:12748 [wandb_init.py:init():891] updated telemetry
+2025-03-17 17:51:32,068 INFO    MainThread:12748 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 17:51:32,583 INFO    MainThread:12748 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 17:51:33,417 INFO    MainThread:12748 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 17:51:33,418 INFO    MainThread:12748 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 17:51:33,418 INFO    MainThread:12748 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 17:51:33,418 INFO    MainThread:12748 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 17:51:33,420 INFO    MainThread:12748 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 17:51:36,758 INFO    MsgRouterThr:12748 [mailbox.py:close():129] Closing mailbox, abandoning 2 handles.

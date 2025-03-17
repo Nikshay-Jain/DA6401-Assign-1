@@ -1,0 +1,37 @@
+  0%|                                                                                                                                                 | 0/10 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 165, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 98, in main
+    opt.run((X_train, y_train), (X_test, y_test),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 512, in run
+    self.batch_gradient_descent(traindat, testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 394, in batch_gradient_descent
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 298, in iterate
+    updator(t, x, y)
+TypeError: optimizers.batch_gradient_descent.<locals>.update_batch() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 165, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 98, in main
+    opt.run((X_train, y_train), (X_test, y_test),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 512, in run
+    self.batch_gradient_descent(traindat, testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 394, in batch_gradient_descent
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 298, in iterate
+    updator(t, x, y)
+TypeError: optimizers.batch_gradient_descent.<locals>.update_batch() takes 1 positional argument but 3 were given
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 165, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 98, in main
+    opt.run((X_train, y_train), (X_test, y_test),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 512, in run
+    self.batch_gradient_descent(traindat, testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 394, in batch_gradient_descent
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 298, in iterate
+    updator(t, x, y)
+TypeError: optimizers.batch_gradient_descent.<locals>.update_batch() takes 1 positional argument but 3 were given

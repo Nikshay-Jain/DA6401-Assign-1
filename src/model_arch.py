@@ -286,6 +286,7 @@ class optimizers:
         Calls updator, loss_calc methods 
         '''
         reminder = X.shape[1] % self.batch_size  # uneven batch size
+        self.ES_best_val_loss = float('inf')
 
         for t in tqdm(range(self.epochs)):
             for i in range(0, np.shape(X)[1] - self.batch_size, self.batch_size):
@@ -342,6 +343,7 @@ class optimizers:
                 "train_accuracy": self.train_accuracy[-1],
                 "val_loss": self.val_loss[-1] if valtrue else None,
                 "val_accuracy": self.val_accuracy[-1] if valtrue else None,
+                "test_accuracy": self.model.compute_accuracy(Xval, Yval) if valtrue else None,
                 "learning_rate": self.learning_rate,
                 "num_layers": self.num_layers,
                 "hidden_size": self.const_hidden_layer_size,
@@ -354,7 +356,7 @@ class optimizers:
                 "beta1": self.beta1,
                 "beta2": self.beta2,
                 "epsilon": self.epsilon,
-                "_timestamp": datetime.datetime.now().timestamp()  
+                "_timestamp": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  
             })
 
         if self.ES:  # return best model if epochs are over       
