@@ -1,0 +1,7 @@
+{"time":"2025-03-17T11:04:25.5115056+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_110425-xdr5zuul\\logs\\debug-core.log"}
+{"time":"2025-03-17T11:04:25.6468556+05:30","level":"INFO","msg":"created new stream","id":"xdr5zuul"}
+{"time":"2025-03-17T11:04:25.6468556+05:30","level":"INFO","msg":"stream: started","id":"xdr5zuul"}
+{"time":"2025-03-17T11:04:25.6468556+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"xdr5zuul"}
+{"time":"2025-03-17T11:04:25.6488247+05:30","level":"INFO","msg":"handler: started","stream_id":"xdr5zuul"}
+{"time":"2025-03-17T11:04:25.6488247+05:30","level":"INFO","msg":"sender: started","stream_id":"xdr5zuul"}
+{"time":"2025-03-17T11:04:26.0782109+05:30","level":"INFO","msg":"Starting system monitor"}

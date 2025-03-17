@@ -146,7 +146,7 @@ class Model:
         Y_pred_labels = np.argmax(Y_pred, axis=0)
         Y_true_labels = np.argmax(Y_test, axis=0)
         accuracy = np.mean(Y_pred_labels == Y_true_labels) * 100
-        print(f"Test Accuracy: {accuracy:.2f}%")
+        wandb.log({"test_acc": accuracy})
         return accuracy
 
     def plot_confusion_matrix(self, X_test, Y_test):
@@ -177,8 +177,13 @@ class Model:
         plt.title("Confusion Matrix")
         plt.xticks(np.arange(num_classes))
         plt.yticks(np.arange(num_classes))
-        plt.show()
+
+        # Save figure
         plt.savefig("confusion_matrix.png")
+        plt.show()
+
+        # Log confusion matrix image to wandb
+        wandb.log({"Confusion Matrix": wandb.Image("confusion_matrix.png")})
 
     def cross_entropy_loss(self, y_true, y_pred):
         '''Compute cross entropy loss'''
@@ -196,15 +201,22 @@ class Model:
         ce_loss = self.cross_entropy_loss(Y_test, Y_pred)
         se_loss = self.squared_error_loss(Y_test, Y_pred)
 
-        print(f"Cross Entropy Loss: {ce_loss:.4f}")
-        print(f"Squared Error Loss: {se_loss:.4f}")
+        # Log losses in wandb
+        wandb.log({
+            "Cross Entropy Loss": ce_loss,
+            "Squared Error Loss": se_loss
+        })
 
         # Plot the comparison
         plt.figure(figsize=(8, 5))
         plt.bar(["Cross Entropy Loss", "Squared Error Loss"], [ce_loss, se_loss], color=['blue', 'orange'])
         plt.ylabel("Loss Value")
         plt.title("Comparison of Loss Functions")
+        
+        # Save and log the loss comparison image
+        plt.savefig("loss_comparison.png")
         plt.show()
+        wandb.log({"Loss Comparison": wandb.Image("loss_comparison.png")})
         
 class optimizers:
     ''' 
@@ -247,9 +259,9 @@ class optimizers:
             self.batch_size = 1
 
         self.train_loss = []
-        self.train_acc = []
+        self.train_accuracy = []
         self.val_loss = []
-        self.val_acc = []
+        self.val_accuracy = []
         self.log = log
         self.ES = ES
 
@@ -264,11 +276,11 @@ class optimizers:
         
         if valtrue:
             wandb.log({'train_loss':self.train_loss[-1],'val_loss':self.val_loss[-1],\
-                       'train_acc':self.train_acc[-1],'val_acc':self.val_acc[-1],'epoch':t})
+                       'train_accuracy':self.train_accuracy[-1],'val_accuracy':self.val_accuracy[-1],'epoch':t})
             
         else:
             wandb.log({'train_loss':self.train_loss[-1],\
-                       'train_acc':self.train_acc[-1],'epoch':t})
+                       'train_accuracy':self.train_accuracy[-1],'epoch':t})
         
     def iterate(self, updator, X, Y, testdat=None):
         '''
@@ -330,9 +342,9 @@ class optimizers:
             wandb.log({
                 "epoch": t + 1,
                 "train_loss": self.train_loss[-1],
-                "train_accuracy": self.train_acc[-1],
+                "train_accuracy": self.train_accuracy[-1],
                 "val_loss": self.val_loss[-1] if valtrue else None,
-                "val_accuracy": self.val_acc[-1] if valtrue else None,
+                "val_accuracy": self.val_accuracy[-1] if valtrue else None,
                 "learning_rate": self.learning_rate,
                 "num_layers": self.num_layers,
                 "hidden_size": self.const_hidden_layer_size,
@@ -350,9 +362,10 @@ class optimizers:
 
         if self.ES:  # return best model if epochs are over       
             self.model = self.ES_model
-            
-        return self.train_loss[-1], self.train_acc[-1]
-                   
+
+        # Return the final loss and accuracy
+        return self.train_loss[-1], self.train_accuracy[-1]
+    
     def accuracy_check(self,Y,Ypred):
         return np.sum(np.argmax(Ypred,axis=0)==np.argmax(Y,axis=0))/Y.shape[1]        
     
@@ -364,14 +377,14 @@ class optimizers:
         
         self.train_loss.append((self.model.loss(Y,Ypred)+regularization)/X.shape[1])
         self.val_loss.append(self.model.loss(Yval,Yvalpred)/Xval.shape[1])
-        self.train_acc.append(self.accuracy_check(Y,Ypred))
-        self.val_acc.append(self.accuracy_check(Yval,Yvalpred))
+        self.train_accuracy.append(self.accuracy_check(Y,Ypred))
+        self.val_accuracy.append(self.accuracy_check(Yval,Yvalpred))
             
     def loss_calc_fit(self,X,Y):
         regularization=1/2*self.model.lamdba_m*np.sum([np.sum(layer.W**2) for layer in self.model.layers])
         Ypred=self.model.predict(X)
         self.train_loss.append((self.model.loss(Y,Ypred)+regularization)/X.shape[1])
-        self.train_acc.append(self.accuracy_check(Y,Ypred)) 
+        self.train_accuracy.append(self.accuracy_check(Y,Ypred)) 
 
     def batch_gradient_descent(self,traindat,testdat):
         X,Y=traindat
@@ -426,23 +439,26 @@ class optimizers:
         
         def update_adam(t):
             for i in range(len(self.model.layers)):
-                layer=self.model.layers[i]
-                #updating momentum, velocity
-                m_W[i]=beta1*m_W[i]+(1-beta1)*layer.d_W
-                m_b[i]=beta1*m_b[i]+(1-beta1)*layer.d_b
+                layer = self.model.layers[i]
+                # Update momentum and velocity
+                m_W[i] = beta1 * m_W[i] + (1 - beta1) * layer.d_W
+                m_b[i] = beta1 * m_b[i] + (1 - beta1) * layer.d_b
 
-                v_W[i]=beta2*v_W[i]+(1-beta2)*layer.d_W**2
-                v_b[i]=beta2*v_b[i]+(1-beta2)*layer.d_b**2
+                v_W[i] = beta2 * v_W[i] + (1 - beta2) * layer.d_W**2
+                v_b[i] = beta2 * v_b[i] + (1 - beta2) * layer.d_b**2
 
-                m_W_hat=m_W[i]/(1-np.power(beta1,t+1))
-                m_b_hat=m_b[i]/(1-np.power(beta1,t+1))
-                v_W_hat=v_W[i]/(1-np.power(beta2,t+1))
-                v_b_hat=v_b[i]/(1-np.power(beta2,t+1))
-                layer.W=layer.W-(self.learning_rate*m_W_hat)/(np.sqrt(v_W_hat)+epsilon)
-                layer.b=layer.b-(self.learning_rate*m_b_hat)/(np.sqrt(v_b_hat)+epsilon)
+                # Bias correction
+                m_W_hat = m_W[i] / (1 - np.power(beta1, t + 1))
+                m_b_hat = m_b[i] / (1 - np.power(beta1, t + 1))
+                v_W_hat = v_W[i] / (1 - np.power(beta2, t + 1))
+                v_b_hat = v_b[i] / (1 - np.power(beta2, t + 1))
 
-        updator=update_adam
-        self.iterate(updator,X,Y,testdat)
+                # Update parameters
+                layer.W -= (self.learning_rate * m_W_hat) / (np.sqrt(v_W_hat) + epsilon)
+                layer.b -= (self.learning_rate * m_b_hat) / (np.sqrt(v_b_hat) + epsilon)
+
+        updator = update_adam
+        self.iterate(updator, X, Y, testdat)
     
     def NAG(self,traindat,testdat,beta=0.9):
         X,Y=traindat

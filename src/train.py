@@ -1,18 +1,17 @@
 import wandb, argparse
-from supporting_funcs import *
 from model_arch import *
 from wandb_setup import *
+from supporting_funcs import *
 
 def log_metrics(epoch, loss, accuracy):
     wandb.log({
         "epoch": epoch,
-        "loss": loss,
-        "accuracy": accuracy
+        "train_loss": loss,
+        "val_accuracy": accuracy
     })
 
 def train():
     setup_wandb()  # Initialize Weights & Biases using the separate setup function
-
     config = wandb.config
 
     # Load dataset
@@ -41,18 +40,34 @@ def train():
             for layer in optimizer.model.layers:
                 layer.W -= optimizer.learning_rate * layer.d_W
                 layer.b -= optimizer.learning_rate * layer.d_b
+
+    elif config.optimizer.lower() == 'momentum':
+        def updator(t):
+            optimizer.momentum((X_train, y_train), (X_test, y_test), momentum=config.momentum)
+
+    elif config.optimizer.lower() == 'nesterov':
+        def updator(t):
+            optimizer.NAG((X_train, y_train), (X_test, y_test), beta=config.beta)
+
+    elif config.optimizer.lower() == 'rmsprop':
+        def updator(t):
+            optimizer.rmsprop((X_train, y_train), (X_test, y_test), beta=config.beta, epsilon=config.epsilon)
+
     elif config.optimizer.lower() == 'adam':
         def updator(t):
-            # Implement Adam updator logic here
             optimizer.Adam((X_train, y_train), (X_test, y_test), beta1=config.beta1, beta2=config.beta2, epsilon=config.epsilon)
+
+    elif config.optimizer.lower() == 'nadam':
+        def updator(t):
+            optimizer.NAdam((X_train, y_train), (X_test, y_test), beta1=config.beta1, beta2=config.beta2, epsilon=config.epsilon)
     else:
         raise ValueError(f"Unsupported optimizer: {config.optimizer}")
 
     # Train the model
     for epoch in range(config.epochs):
         loss, accuracy = optimizer.iterate(updator, X_train, y_train, testdat=(X_test, y_test))
-        log_metrics(epoch, loss, accuracy)  # Log each epoch's loss & accuracy
-
+        log_metrics(epoch, loss, accuracy)      # Log each epoch's train loss & accuracy
+        wandb.log({"test_acc": optimizer.model.compute_accuracy(X_test, y_test)})
     return optimizer
 
 def main(args):
@@ -63,7 +78,7 @@ def main(args):
 
     # Load dataset
     (X_train, y_train), (X_test, y_test) = load_dataset()
-    X_test, y_test = Preprocess(X_test, y_test)  # Preprocess test data
+    X_test, y_test = Preprocess(X_test, y_test)             # Preprocess test data
 
     # Initialize optimizer
     opt = optimizers(
@@ -83,22 +98,24 @@ def main(args):
     )
 
     if config.mode.lower() == 'test':
-        X_train, y_train = Preprocess(X_train, y_train)  # Preprocess training data
+        X_train, y_train = Preprocess(X_train, y_train)     # Preprocess training data
         opt.run((X_train, y_train), (X_test, y_test),
                 momentum=config.momentum, beta=config.beta,
                 beta1=config.beta1, beta2=config.beta2,
                 epsilon=config.epsilon)
     else:
         X_train, X_val, y_train, y_val = train_val_split(X_train, y_train, splits=0.1)
-        X_train, y_train = Preprocess(X_train, y_train)  # Preprocess training data
-        X_val, y_val = Preprocess(X_val, y_val)  # Preprocess validation data
+        X_train, y_train = Preprocess(X_train, y_train)     # Preprocess training data
+        X_val, y_val = Preprocess(X_val, y_val)             # Preprocess validation data
         opt.run((X_train, y_train), (X_val, y_val),
                 momentum=config.momentum, beta=config.beta,
                 beta1=config.beta1, beta2=config.beta2,
                 epsilon=config.epsilon)
         
     # Log final test accuracy
-    wandb.log({"final_test_accuracy": opt.model.evaluate(X_test, y_test)})
+    wandb.log({"test_acc": opt.model.compute_accuracy(X_test, y_test)})
+    opt.model.plot_confusion_matrix(X_test, y_test)
+    opt.model.compare_losses(X_test, y_test)
     return opt.model.predict(X_test, config.probab)
 
 # Argument Parser
@@ -148,5 +165,5 @@ if __name__ == "__main__":
         }
     }
     sweep_id = wandb.sweep(sweep_config, project=args.wandb_project)
-    wandb.agent(sweep_id, function=train, count=5)  # Run 5 experiments
+    wandb.agent(sweep_id, function=train, count=1)  # Run 1 experiments
     main(args)
