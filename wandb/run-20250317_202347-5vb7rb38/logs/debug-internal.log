@@ -1,0 +1,7 @@
+{"time":"2025-03-17T20:23:47.5209511+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_202347-5vb7rb38\\logs\\debug-core.log"}
+{"time":"2025-03-17T20:23:47.7074233+05:30","level":"INFO","msg":"created new stream","id":"5vb7rb38"}
+{"time":"2025-03-17T20:23:47.7079755+05:30","level":"INFO","msg":"stream: started","id":"5vb7rb38"}
+{"time":"2025-03-17T20:23:47.7079755+05:30","level":"INFO","msg":"handler: started","stream_id":"5vb7rb38"}
+{"time":"2025-03-17T20:23:47.7079755+05:30","level":"INFO","msg":"sender: started","stream_id":"5vb7rb38"}
+{"time":"2025-03-17T20:23:47.7079755+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"5vb7rb38"}
+{"time":"2025-03-17T20:23:48.1600276+05:30","level":"INFO","msg":"Starting system monitor"}

@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from keras.datasets import fashion_mnist
 from wandb_setup import setup_wandb
 
-wandb = setup_wandb(run_name="Q1-dataset-visualization")
+wandb = setup_wandb(run_name="mm21b044")
 
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 

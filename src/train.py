@@ -63,7 +63,7 @@ def train():
     loss, accuracy = optimizer.iterate(updator, X_train, y_train, testdat=(X_test, y_test))
     log_metrics(loss, accuracy)
     wandb.log({"test_accuracy": optimizer.model.compute_accuracy(X_test, y_test), "_timestamp": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')})
-    
+    wandb.finish()
     return optimizer
 
 def main(args):
@@ -121,7 +121,7 @@ if __name__ == "__main__":
     parser.add_argument('-wp', "--wandb_project", type=str, default="DL-Assign-1")
     parser.add_argument("-we", "--wandb_entity", type=str, default="mm21b044")
     parser.add_argument("-d", "--dataset", type=str, default="fashion_mnist", help="fashion_mnist / mnist")
-    parser.add_argument("-e", "--epochs", type=int, default=40, help='Number of epochs')
+    parser.add_argument("-e", "--epochs", type=int, default=10, help='Number of epochs')
     parser.add_argument("-b", "--batch_size", type=int, default=32, help='Batch Size')
     parser.add_argument("-l", "--loss", type=str, default="cross_entropy", help="Cross-entropy loss / MSE loss")
     parser.add_argument("-o", "--optimizer", type=str, default="nadam", help="sgd/momentum/nesterov/rmsprop/adam/nadam")
@@ -151,7 +151,7 @@ if __name__ == "__main__":
             "num_layers": {"values": [3, 4, 5]},
             "hidden_size": {"values": [32, 64, 128]},
             "activation": {"values": ["relu", "tanh", "sigmoid"]},
-            "weight_init": {"values": ["xavier", "he", "random"]},
+            "weight_init": {"values": ["xavier", "random"]},
             "loss": {"values": ["cross_entropy", "mse"]},
             "optimizer": {"values": ["sgd", "nesterov", "rmsprop", "momentum", "adam", "nadam"]},
             "learning_rate": {"values": [0.001, 0.0001]},
@@ -161,5 +161,5 @@ if __name__ == "__main__":
         }
     }
     sweep_id = wandb.sweep(sweep_config, project=args.wandb_project)
-    wandb.agent(sweep_id, function=train, count=2)  # Run 1 experiments
+    wandb.agent(sweep_id, function=train, count=1)  # Run 1 experiments
     main(args)
