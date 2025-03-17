@@ -1,0 +1,16 @@
+{"time":"2025-03-17T09:39:56.2820517+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_093956-yinrbynr\\logs\\debug-core.log"}
+{"time":"2025-03-17T09:39:56.3968827+05:30","level":"INFO","msg":"created new stream","id":"yinrbynr"}
+{"time":"2025-03-17T09:39:56.3975055+05:30","level":"INFO","msg":"stream: started","id":"yinrbynr"}
+{"time":"2025-03-17T09:39:56.3975055+05:30","level":"INFO","msg":"handler: started","stream_id":"yinrbynr"}
+{"time":"2025-03-17T09:39:56.3975055+05:30","level":"INFO","msg":"sender: started","stream_id":"yinrbynr"}
+{"time":"2025-03-17T09:39:56.3975055+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"yinrbynr"}
+{"time":"2025-03-17T09:39:56.7484783+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T09:39:56.8515878+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T09:39:56.8522847+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T09:39:57.8628345+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading requirements.txt","runtime_seconds":0.7077169,"progress":"1.1KB/1.1KB"},{"desc":"uploading wandb-metadata.json","runtime_seconds":0.3542423,"progress":"844B/844B"},{"desc":"uploading output.log","runtime_seconds":0.0613946},{"desc":"uploading wandb-summary.json","runtime_seconds":0.0613946,"progress":"24B/24B"}],"total_operations":4}}
+{"time":"2025-03-17T09:39:59.1593199+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T09:39:59.4796693+05:30","level":"INFO","msg":"stream: closing","id":"yinrbynr"}
+{"time":"2025-03-17T09:39:59.4796693+05:30","level":"INFO","msg":"handler: closed","stream_id":"yinrbynr"}
+{"time":"2025-03-17T09:39:59.4796693+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"yinrbynr"}
+{"time":"2025-03-17T09:39:59.4796693+05:30","level":"INFO","msg":"sender: closed","stream_id":"yinrbynr"}
+{"time":"2025-03-17T09:39:59.4807508+05:30","level":"INFO","msg":"stream: closed","id":"yinrbynr"}

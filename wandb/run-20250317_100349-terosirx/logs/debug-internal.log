@@ -1,0 +1,15 @@
+{"time":"2025-03-17T10:03:49.6950433+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_100349-terosirx\\logs\\debug-core.log"}
+{"time":"2025-03-17T10:03:49.8069695+05:30","level":"INFO","msg":"created new stream","id":"terosirx"}
+{"time":"2025-03-17T10:03:49.8069695+05:30","level":"INFO","msg":"stream: started","id":"terosirx"}
+{"time":"2025-03-17T10:03:49.8069695+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"terosirx"}
+{"time":"2025-03-17T10:03:49.8069695+05:30","level":"INFO","msg":"sender: started","stream_id":"terosirx"}
+{"time":"2025-03-17T10:03:49.8069695+05:30","level":"INFO","msg":"handler: started","stream_id":"terosirx"}
+{"time":"2025-03-17T10:03:50.108351+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T10:22:01.9013755+05:30","level":"INFO","msg":"stream: closing","id":"terosirx"}
+{"time":"2025-03-17T10:22:01.9013755+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T10:22:01.9032508+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T10:22:03.6843153+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T10:22:03.9968706+05:30","level":"INFO","msg":"handler: closed","stream_id":"terosirx"}
+{"time":"2025-03-17T10:22:03.9968706+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"terosirx"}
+{"time":"2025-03-17T10:22:03.9968706+05:30","level":"INFO","msg":"sender: closed","stream_id":"terosirx"}
+{"time":"2025-03-17T10:22:03.9974351+05:30","level":"INFO","msg":"stream: closed","id":"terosirx"}

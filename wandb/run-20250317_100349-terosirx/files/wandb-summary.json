@@ -1,0 +1,1 @@
+{"epoch":10,"_wandb":{"runtime":1092},"_runtime":1091.1209075,"epsilon":1e-10,"beta1":0.9,"optimizer":"sgd","train_loss":0.4099671503884947,"momentum":0.9,"_timestamp":1.7421871208067873e+09,"beta":0.9,"_step":19,"weight_decay":0,"num_layers":2,"learning_rate":0.001,"train_acc":0.8945,"activation":"relu","batch_size":1,"hidden_size":128,"train_accuracy":0.8945,"beta2":0.999}

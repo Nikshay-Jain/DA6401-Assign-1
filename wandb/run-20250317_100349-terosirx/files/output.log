@@ -1,0 +1,33 @@
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [18:10<00:00, 109.03s/it]
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    parser.add_argument("-a", "--activation", type=str, default='relu', help="Activation Function")
+    ^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    const_hidden_layer_initializations=config.weight_init.lower(),
+                                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    parser.add_argument("-a", "--activation", type=str, default='relu', help="Activation Function")
+    ^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    const_hidden_layer_initializations=config.weight_init.lower(),
+                                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    parser.add_argument("-a", "--activation", type=str, default='relu', help="Activation Function")
+    ^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    const_hidden_layer_initializations=config.weight_init.lower(),
+                                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    parser.add_argument("-a", "--activation", type=str, default='relu', help="Activation Function")
+    ^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    const_hidden_layer_initializations=config.weight_init.lower(),
+                                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'

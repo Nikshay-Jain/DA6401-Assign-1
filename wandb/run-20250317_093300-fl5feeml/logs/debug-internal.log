@@ -1,0 +1,16 @@
+{"time":"2025-03-17T09:33:00.6925395+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_093300-fl5feeml\\logs\\debug-core.log"}
+{"time":"2025-03-17T09:33:00.8104299+05:30","level":"INFO","msg":"created new stream","id":"fl5feeml"}
+{"time":"2025-03-17T09:33:00.8104299+05:30","level":"INFO","msg":"stream: started","id":"fl5feeml"}
+{"time":"2025-03-17T09:33:00.8104299+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"fl5feeml"}
+{"time":"2025-03-17T09:33:00.8104299+05:30","level":"INFO","msg":"sender: started","stream_id":"fl5feeml"}
+{"time":"2025-03-17T09:33:00.8104299+05:30","level":"INFO","msg":"handler: started","stream_id":"fl5feeml"}
+{"time":"2025-03-17T09:33:01.1656502+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T09:33:01.2603178+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T09:33:01.2609462+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T09:33:02.266927+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.0561597},{"desc":"uploading wandb-summary.json","runtime_seconds":0.0561597,"progress":"24B/24B"}],"total_operations":2}}
+{"time":"2025-03-17T09:33:03.5320856+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T09:33:03.8873764+05:30","level":"INFO","msg":"stream: closing","id":"fl5feeml"}
+{"time":"2025-03-17T09:33:03.8873764+05:30","level":"INFO","msg":"handler: closed","stream_id":"fl5feeml"}
+{"time":"2025-03-17T09:33:03.8873764+05:30","level":"INFO","msg":"sender: closed","stream_id":"fl5feeml"}
+{"time":"2025-03-17T09:33:03.8873764+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"fl5feeml"}
+{"time":"2025-03-17T09:33:03.8878827+05:30","level":"INFO","msg":"stream: closed","id":"fl5feeml"}

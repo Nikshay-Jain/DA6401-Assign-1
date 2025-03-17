@@ -1,0 +1,53 @@
+  0%|                                                                                                                                   | 0/40 [00:08<?, ?it/s]
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 114, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 53, in main
+    opt.run((Xtrainfull, ytrainfull),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 513, in run
+    self.NAdam(traindat,testdat,beta1=0.9, beta2=0.999,epsilon=1e-10)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 490, in NAdam
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 334, in iterate
+    "learning_rate": self.eta,
+                     ^^^^^^^^
+AttributeError: 'optimizers' object has no attribute 'eta'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 114, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 53, in main
+    opt.run((Xtrainfull, ytrainfull),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 513, in run
+    self.NAdam(traindat,testdat,beta1=0.9, beta2=0.999,epsilon=1e-10)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 490, in NAdam
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 334, in iterate
+    "learning_rate": self.eta,
+                     ^^^^^^^^
+AttributeError: 'optimizers' object has no attribute 'eta'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 114, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 53, in main
+    opt.run((Xtrainfull, ytrainfull),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 513, in run
+    self.NAdam(traindat,testdat,beta1=0.9, beta2=0.999,epsilon=1e-10)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 490, in NAdam
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 334, in iterate
+    "learning_rate": self.eta,
+                     ^^^^^^^^
+AttributeError: 'optimizers' object has no attribute 'eta'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 114, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 53, in main
+    opt.run((Xtrainfull, ytrainfull),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 513, in run
+    self.NAdam(traindat,testdat,beta1=0.9, beta2=0.999,epsilon=1e-10)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 490, in NAdam
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 334, in iterate
+    "learning_rate": self.eta,
+                     ^^^^^^^^
+AttributeError: 'optimizers' object has no attribute 'eta'

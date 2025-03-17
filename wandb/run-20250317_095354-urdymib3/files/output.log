@@ -1,0 +1,29 @@
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [09:01<00:00, 54.11s/it]
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    wandb.log({"final_test_accuracy": opt.model.evaluate(Xtest, ytest)})  # Log final test accuracy
+                                      ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    wandb.log({"final_test_accuracy": opt.model.evaluate(Xtest, ytest)})  # Log final test accuracy
+                                      ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    wandb.log({"final_test_accuracy": opt.model.evaluate(Xtest, ytest)})  # Log final test accuracy
+                                      ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 118, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 67, in main
+    wandb.log({"final_test_accuracy": opt.model.evaluate(Xtest, ytest)})  # Log final test accuracy
+                                      ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Model' object has no attribute 'evaluate'

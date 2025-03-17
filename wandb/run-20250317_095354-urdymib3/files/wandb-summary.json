@@ -1,0 +1,1 @@
+{"train_acc":0.8953,"weight_decay":0,"learning_rate":0.001,"hidden_size":128,"epoch":10,"_step":19,"_runtime":542.0140618,"batch_size":1,"beta":0.9,"num_layers":2,"_timestamp":1.7421859761147456e+09,"_wandb":{"runtime":542},"train_accuracy":0.8953,"beta1":0.9,"optimizer":"sgd","train_loss":0.4110791150808031,"activation":"relu","beta2":0.999,"epsilon":1e-10,"momentum":0.9}

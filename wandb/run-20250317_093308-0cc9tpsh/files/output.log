@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 115, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 40, in main
+    opt = optimizers(
+          ^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 237, in __init__
+    self.model=Model(X_size,Y_size,hidden_layer_sizes,hidden_layer_activations,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 100, in __init__
+    self.layers.append(layer(prev_size,size,activation,batch_size,inits))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 32, in __init__
+    assert(type_=='random'or type_=='xavier'or type_=='glorot' or type_=='he' or type_=='kaiming' ),\
+AssertionError: Must be 'random'or 'xavier' or 'glorot' or 'He' or 'kaiming'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 115, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 40, in main
+    opt = optimizers(
+          ^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 237, in __init__
+    self.model=Model(X_size,Y_size,hidden_layer_sizes,hidden_layer_activations,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 100, in __init__
+    self.layers.append(layer(prev_size,size,activation,batch_size,inits))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 32, in __init__
+    assert(type_=='random'or type_=='xavier'or type_=='glorot' or type_=='he' or type_=='kaiming' ),\
+AssertionError: Must be 'random'or 'xavier' or 'glorot' or 'He' or 'kaiming'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 115, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 40, in main
+    opt = optimizers(
+          ^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 237, in __init__
+    self.model=Model(X_size,Y_size,hidden_layer_sizes,hidden_layer_activations,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 100, in __init__
+    self.layers.append(layer(prev_size,size,activation,batch_size,inits))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 32, in __init__
+    assert(type_=='random'or type_=='xavier'or type_=='glorot' or type_=='he' or type_=='kaiming' ),\
+AssertionError: Must be 'random'or 'xavier' or 'glorot' or 'He' or 'kaiming'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 115, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 40, in main
+    opt = optimizers(
+          ^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 237, in __init__
+    self.model=Model(X_size,Y_size,hidden_layer_sizes,hidden_layer_activations,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 100, in __init__
+    self.layers.append(layer(prev_size,size,activation,batch_size,inits))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 32, in __init__
+    assert(type_=='random'or type_=='xavier'or type_=='glorot' or type_=='he' or type_=='kaiming' ),\
+AssertionError: Must be 'random'or 'xavier' or 'glorot' or 'He' or 'kaiming'

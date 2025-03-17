@@ -1,0 +1,16 @@
+{"time":"2025-03-17T09:53:51.5367835+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_095351-urdymib3\\logs\\debug-core.log"}
+{"time":"2025-03-17T09:53:51.6523793+05:30","level":"INFO","msg":"created new stream","id":"urdymib3"}
+{"time":"2025-03-17T09:53:51.6523793+05:30","level":"INFO","msg":"stream: started","id":"urdymib3"}
+{"time":"2025-03-17T09:53:51.6523793+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"urdymib3"}
+{"time":"2025-03-17T09:53:51.6523793+05:30","level":"INFO","msg":"sender: started","stream_id":"urdymib3"}
+{"time":"2025-03-17T09:53:51.6523793+05:30","level":"INFO","msg":"handler: started","stream_id":"urdymib3"}
+{"time":"2025-03-17T09:53:52.0339437+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T09:53:52.1529995+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T09:53:52.1536644+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T09:53:53.1692522+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-metadata.json","runtime_seconds":0.4075922,"progress":"844B/844B"},{"desc":"uploading output.log","runtime_seconds":0.0697024},{"desc":"uploading wandb-summary.json","runtime_seconds":0.0697024,"progress":"24B/24B"}],"total_operations":3}}
+{"time":"2025-03-17T09:53:53.7476845+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T09:53:54.0836921+05:30","level":"INFO","msg":"stream: closing","id":"urdymib3"}
+{"time":"2025-03-17T09:53:54.0836921+05:30","level":"INFO","msg":"handler: closed","stream_id":"urdymib3"}
+{"time":"2025-03-17T09:53:54.0836921+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"urdymib3"}
+{"time":"2025-03-17T09:53:54.0836921+05:30","level":"INFO","msg":"sender: closed","stream_id":"urdymib3"}
+{"time":"2025-03-17T09:53:54.0836921+05:30","level":"INFO","msg":"stream: closed","id":"urdymib3"}

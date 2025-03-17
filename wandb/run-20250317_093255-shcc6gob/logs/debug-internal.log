@@ -1,0 +1,16 @@
+{"time":"2025-03-17T09:32:55.1298204+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_093255-shcc6gob\\logs\\debug-core.log"}
+{"time":"2025-03-17T09:32:55.2433007+05:30","level":"INFO","msg":"created new stream","id":"shcc6gob"}
+{"time":"2025-03-17T09:32:55.2433007+05:30","level":"INFO","msg":"stream: started","id":"shcc6gob"}
+{"time":"2025-03-17T09:32:55.2433007+05:30","level":"INFO","msg":"handler: started","stream_id":"shcc6gob"}
+{"time":"2025-03-17T09:32:55.2433007+05:30","level":"INFO","msg":"sender: started","stream_id":"shcc6gob"}
+{"time":"2025-03-17T09:32:55.2433007+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"shcc6gob"}
+{"time":"2025-03-17T09:32:55.6016042+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T09:32:55.7364179+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T09:32:55.7369414+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T09:32:56.7552894+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.0516235,"progress":"24B/24B"},{"desc":"uploading wandb-metadata.json","runtime_seconds":0.0516235,"progress":"844B/844B"},{"desc":"uploading output.log","runtime_seconds":0.0516235}],"total_operations":3}}
+{"time":"2025-03-17T09:32:57.4386153+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T09:32:57.7920619+05:30","level":"INFO","msg":"stream: closing","id":"shcc6gob"}
+{"time":"2025-03-17T09:32:57.7920619+05:30","level":"INFO","msg":"handler: closed","stream_id":"shcc6gob"}
+{"time":"2025-03-17T09:32:57.7920619+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"shcc6gob"}
+{"time":"2025-03-17T09:32:57.7920619+05:30","level":"INFO","msg":"sender: closed","stream_id":"shcc6gob"}
+{"time":"2025-03-17T09:32:57.7920619+05:30","level":"INFO","msg":"stream: closed","id":"shcc6gob"}

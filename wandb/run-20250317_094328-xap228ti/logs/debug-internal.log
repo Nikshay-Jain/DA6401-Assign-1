@@ -1,0 +1,16 @@
+{"time":"2025-03-17T09:43:28.5083127+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_094328-xap228ti\\logs\\debug-core.log"}
+{"time":"2025-03-17T09:43:28.6255616+05:30","level":"INFO","msg":"created new stream","id":"xap228ti"}
+{"time":"2025-03-17T09:43:28.6255616+05:30","level":"INFO","msg":"stream: started","id":"xap228ti"}
+{"time":"2025-03-17T09:43:28.6255616+05:30","level":"INFO","msg":"handler: started","stream_id":"xap228ti"}
+{"time":"2025-03-17T09:43:28.6255616+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"xap228ti"}
+{"time":"2025-03-17T09:43:28.6255616+05:30","level":"INFO","msg":"sender: started","stream_id":"xap228ti"}
+{"time":"2025-03-17T09:43:29.0041793+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T09:43:29.085596+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T09:43:29.0862325+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T09:43:30.1052201+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.4181001},{"desc":"uploading output.log","runtime_seconds":0.1037485},{"desc":"uploading wandb-summary.json","runtime_seconds":0.1037485,"progress":"24B/24B"}],"total_operations":3}}
+{"time":"2025-03-17T09:43:31.6826243+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T09:43:31.985372+05:30","level":"INFO","msg":"stream: closing","id":"xap228ti"}
+{"time":"2025-03-17T09:43:31.985372+05:30","level":"INFO","msg":"handler: closed","stream_id":"xap228ti"}
+{"time":"2025-03-17T09:43:31.985372+05:30","level":"INFO","msg":"sender: closed","stream_id":"xap228ti"}
+{"time":"2025-03-17T09:43:31.985372+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"xap228ti"}
+{"time":"2025-03-17T09:43:31.985372+05:30","level":"INFO","msg":"stream: closed","id":"xap228ti"}
