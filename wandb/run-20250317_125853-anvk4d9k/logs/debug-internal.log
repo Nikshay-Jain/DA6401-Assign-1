@@ -1,0 +1,16 @@
+{"time":"2025-03-17T12:58:53.5406468+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_125853-anvk4d9k\\logs\\debug-core.log"}
+{"time":"2025-03-17T12:58:53.659217+05:30","level":"INFO","msg":"created new stream","id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:53.6597999+05:30","level":"INFO","msg":"handler: started","stream_id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:53.6597999+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:53.6597999+05:30","level":"INFO","msg":"stream: started","id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:53.6597999+05:30","level":"INFO","msg":"sender: started","stream_id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:54.0162118+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T12:58:54.8457029+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T12:58:54.846108+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T12:58:55.8154388+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T12:58:55.863724+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 0-0","runtime_seconds":0.0482852}],"total_operations":1}}
+{"time":"2025-03-17T12:58:56.1528477+05:30","level":"INFO","msg":"stream: closing","id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:56.1528477+05:30","level":"INFO","msg":"handler: closed","stream_id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:56.1528477+05:30","level":"INFO","msg":"sender: closed","stream_id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:56.1528477+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"anvk4d9k"}
+{"time":"2025-03-17T12:58:56.1528477+05:30","level":"INFO","msg":"stream: closed","id":"anvk4d9k"}

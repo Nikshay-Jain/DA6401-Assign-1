@@ -21,3 +21,10 @@ config: {'_wandb': {}}
 2025-03-17 11:52:50,467 INFO    Thread-25 (_run_job):344 [wandb_run.py:_redirect():2292] Wrapping output streams.
 2025-03-17 11:52:50,468 INFO    Thread-25 (_run_job):344 [wandb_run.py:_redirect():2315] Redirects installed.
 2025-03-17 11:52:50,468 INFO    Thread-25 (_run_job):344 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 12:12:51,592 INFO    Thread-25 (_run_job):344 [wandb_run.py:_finish():2112] finishing run mm21b044-indian-institute-of-technology-madras/DL-Assign-1/xno3gc04
+2025-03-17 12:12:51,599 INFO    Thread-25 (_run_job):344 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 12:12:51,601 INFO    Thread-25 (_run_job):344 [wandb_run.py:_restore():2322] restore
+2025-03-17 12:12:51,602 INFO    Thread-25 (_run_job):344 [wandb_run.py:_restore():2328] restore done
+2025-03-17 12:12:53,183 INFO    Thread-25 (_run_job):344 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 12:12:53,185 INFO    Thread-25 (_run_job):344 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 12:12:53,190 INFO    Thread-25 (_run_job):344 [wandb_run.py:_footer_sync_info():3917] logging synced files

@@ -1,6 +1,6 @@
 import numpy as np
 from tqdm import tqdm
-import wandb, copy, time
+import wandb, copy, datetime
 from supporting_funcs import *
 import matplotlib.pyplot as plt
 
@@ -146,7 +146,6 @@ class Model:
         Y_pred_labels = np.argmax(Y_pred, axis=0)
         Y_true_labels = np.argmax(Y_test, axis=0)
         accuracy = np.mean(Y_pred_labels == Y_true_labels) * 100
-        wandb.log({"test_acc": accuracy})
         return accuracy
 
     def plot_confusion_matrix(self, X_test, Y_test):
@@ -180,14 +179,13 @@ class Model:
 
         # Save figure
         plt.savefig("confusion_matrix.png")
-        plt.show()
 
         # Log confusion matrix image to wandb
         wandb.log({"Confusion Matrix": wandb.Image("confusion_matrix.png")})
 
     def cross_entropy_loss(self, y_true, y_pred):
         '''Compute cross entropy loss'''
-        epsilon = 1e-12  # Avoid log(0) errors
+        epsilon = 1e-10  # Avoid log(0) errors
         y_pred = np.clip(y_pred, epsilon, 1. - epsilon)
         return -np.sum(y_true * np.log(y_pred)) / y_true.shape[1]
 
@@ -215,7 +213,6 @@ class Model:
         
         # Save and log the loss comparison image
         plt.savefig("loss_comparison.png")
-        plt.show()
         wandb.log({"Loss Comparison": wandb.Image("loss_comparison.png")})
         
 class optimizers:
@@ -234,18 +231,18 @@ class optimizers:
 
         self.batch_size = batch_size
         self.epochs = epochs
-        self.num_layers = num_layers  # Add this
+        self.num_layers = num_layers
         self.const_hidden_layer_size = const_hidden_layer_size
         self.const_hidden_layer_activation = const_hidden_layer_activation
         self.const_hidden_layer_initializations = const_hidden_layer_initializations
         self.lamdba = lamdba
-        self.learning_rate = learning_rate  # Use self.learning_rate instead of self.learning_rate
+        self.learning_rate = learning_rate
         self.optimizer = optimizer
-        self.momentum = momentum  # Add this
-        self.beta = beta  # Add this
-        self.beta1 = beta1  # Add this
-        self.beta2 = beta2  # Add this
-        self.epsilon = epsilon  # Add this
+        self.momentum = momentum
+        self.beta = beta
+        self.beta1 = beta1
+        self.beta2 = beta2
+        self.epsilon = epsilon
 
         # Initialize hidden layer sizes, activations, and initializations
         hidden_layer_sizes = [const_hidden_layer_size] * num_layers
@@ -357,13 +354,12 @@ class optimizers:
                 "beta1": self.beta1,
                 "beta2": self.beta2,
                 "epsilon": self.epsilon,
-                "_timestamp": time.time()
+                "_timestamp": datetime.datetime.now().timestamp()  
             })
 
         if self.ES:  # return best model if epochs are over       
             self.model = self.ES_model
 
-        # Return the final loss and accuracy
         return self.train_loss[-1], self.train_accuracy[-1]
     
     def accuracy_check(self,Y,Ypred):
@@ -509,29 +505,18 @@ class optimizers:
         updator=update_nadam
         self.iterate(updator,X,Y,testdat)
         
-    def run(self,traindat,testdat=None,momentum=0.9,beta=0.9,beta1=0.9, beta2=0.999,epsilon=1e-10):
-        if self.optimizer=="batch":
-            self.batch_gradient_descent(traindat,testdat)
-            
-        elif self.optimizer=="sgd":
-            assert(self.batch_size==1), "Batch size should be 1 for stochastic gradient descent"
-            self.batch_gradient_descent(traindat,testdat)
-            
-        elif self.optimizer=="momentum":
-            self.momentum(traindat,testdat,beta)
-            
-        elif self.optimizer=="nesterov":
-            self.NAG(traindat,testdat,beta)
-            
-        elif self.optimizer=="rmsprop":
-            self.rmsprop(traindat,testdat,beta=0.9,epsilon=1e-10)
-            
-        elif self.optimizer=="adam":
-            self.Adam(traindat,testdat,beta1=0.9, beta2=0.999,epsilon=1e-10)    
-            
-        elif self.optimizer=="nadam":
-            self.NAdam(traindat,testdat,beta1=0.9, beta2=0.999,epsilon=1e-10)
-
+    def run(self, traindat, testdat=None, momentum=0.9, beta=0.9, beta1=0.9, beta2=0.999, epsilon=1e-10):
+        if self.optimizer == "sgd":
+            self.batch_gradient_descent(traindat, testdat)
+        elif self.optimizer == "momentum":
+            self.momentum(traindat, testdat, momentum=momentum)
+        elif self.optimizer == "nesterov":
+            self.NAG(traindat, testdat, beta=beta)
+        elif self.optimizer == "rmsprop":
+            self.rmsprop(traindat, testdat, beta=beta, epsilon=epsilon)
+        elif self.optimizer == "adam":
+            self.Adam(traindat, testdat, beta1=beta1, beta2=beta2, epsilon=epsilon)
+        elif self.optimizer == "nadam":
+            self.NAdam(traindat, testdat, beta1=beta1, beta2=beta2, epsilon=epsilon)
         else:
-            print("Invalid optimizer name "+ self.optimizer)
-            return(0)
+            raise ValueError(f"Unsupported optimizer: {self.optimizer}")

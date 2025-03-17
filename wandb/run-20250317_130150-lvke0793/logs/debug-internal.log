@@ -1,0 +1,16 @@
+{"time":"2025-03-17T13:01:50.0340938+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_130150-lvke0793\\logs\\debug-core.log"}
+{"time":"2025-03-17T13:01:50.153338+05:30","level":"INFO","msg":"created new stream","id":"lvke0793"}
+{"time":"2025-03-17T13:01:50.153338+05:30","level":"INFO","msg":"stream: started","id":"lvke0793"}
+{"time":"2025-03-17T13:01:50.153338+05:30","level":"INFO","msg":"handler: started","stream_id":"lvke0793"}
+{"time":"2025-03-17T13:01:50.153338+05:30","level":"INFO","msg":"sender: started","stream_id":"lvke0793"}
+{"time":"2025-03-17T13:01:50.153338+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"lvke0793"}
+{"time":"2025-03-17T13:01:50.5355845+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T13:02:06.4732083+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T13:02:06.47372+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T13:02:07.4891151+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6944508,"progress":"754B/754B"},{"desc":"uploading config.yaml","runtime_seconds":0.437412,"progress":"720B/720B"}],"total_operations":2}}
+{"time":"2025-03-17T13:02:08.103915+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T13:02:08.4420625+05:30","level":"INFO","msg":"stream: closing","id":"lvke0793"}
+{"time":"2025-03-17T13:02:08.4420625+05:30","level":"INFO","msg":"handler: closed","stream_id":"lvke0793"}
+{"time":"2025-03-17T13:02:08.4420625+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"lvke0793"}
+{"time":"2025-03-17T13:02:08.4420625+05:30","level":"INFO","msg":"sender: closed","stream_id":"lvke0793"}
+{"time":"2025-03-17T13:02:08.4434389+05:30","level":"INFO","msg":"stream: closed","id":"lvke0793"}

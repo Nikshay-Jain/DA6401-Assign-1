@@ -1,0 +1,15 @@
+{"time":"2025-03-17T12:36:55.5810747+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_123655-gjerev32\\logs\\debug-core.log"}
+{"time":"2025-03-17T12:36:55.6958038+05:30","level":"INFO","msg":"created new stream","id":"gjerev32"}
+{"time":"2025-03-17T12:36:55.6963471+05:30","level":"INFO","msg":"stream: started","id":"gjerev32"}
+{"time":"2025-03-17T12:36:55.6963471+05:30","level":"INFO","msg":"sender: started","stream_id":"gjerev32"}
+{"time":"2025-03-17T12:36:55.6963471+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gjerev32"}
+{"time":"2025-03-17T12:36:55.6963471+05:30","level":"INFO","msg":"handler: started","stream_id":"gjerev32"}
+{"time":"2025-03-17T12:36:56.0190545+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T12:48:01.1021889+05:30","level":"INFO","msg":"stream: closing","id":"gjerev32"}
+{"time":"2025-03-17T12:48:01.1021889+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T12:48:01.1033373+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T12:48:02.8397295+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T12:48:03.1790504+05:30","level":"INFO","msg":"handler: closed","stream_id":"gjerev32"}
+{"time":"2025-03-17T12:48:03.1790504+05:30","level":"INFO","msg":"sender: closed","stream_id":"gjerev32"}
+{"time":"2025-03-17T12:48:03.1790504+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"gjerev32"}
+{"time":"2025-03-17T12:48:03.1799679+05:30","level":"INFO","msg":"stream: closed","id":"gjerev32"}

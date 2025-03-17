@@ -1,0 +1,25 @@
+  0%|                                                                                                                                                 | 0/10 [00:19<?, ?it/s]
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 168, in <module>
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 101, in main
+    momentum=config.momentum, beta=config.beta,
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 513, in run
+    self.batch_gradient_descent(traindat, testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 395, in batch_gradient_descent
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 360, in iterate
+    "_timestamp": datetime.datetime.now().timestamp()
+                ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 168, in <module>
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 101, in main
+    momentum=config.momentum, beta=config.beta,
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 513, in run
+    self.batch_gradient_descent(traindat, testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 395, in batch_gradient_descent
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 360, in iterate
+    "_timestamp": datetime.datetime.now().timestamp()
+                ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'

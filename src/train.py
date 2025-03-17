@@ -1,4 +1,4 @@
-import wandb, argparse
+import wandb, argparse, datetime
 from model_arch import *
 from wandb_setup import *
 from supporting_funcs import *
@@ -37,9 +37,7 @@ def train():
     # Define updator function based on the optimizer
     if config.optimizer.lower() == 'sgd':
         def updator(t):
-            for layer in optimizer.model.layers:
-                layer.W -= optimizer.learning_rate * layer.d_W
-                layer.b -= optimizer.learning_rate * layer.d_b
+            optimizer.batch_gradient_descent((X_train, y_train), (X_test, y_test))
 
     elif config.optimizer.lower() == 'momentum':
         def updator(t):
@@ -67,7 +65,7 @@ def train():
     for epoch in range(config.epochs):
         loss, accuracy = optimizer.iterate(updator, X_train, y_train, testdat=(X_test, y_test))
         log_metrics(epoch, loss, accuracy)      # Log each epoch's train loss & accuracy
-        wandb.log({"test_acc": optimizer.model.compute_accuracy(X_test, y_test)})
+        wandb.log({"test_accuracy": optimizer.model.compute_accuracy(X_test, y_test), "_timestamp": datetime.datetime.now().timestamp()})
     return optimizer
 
 def main(args):
@@ -111,9 +109,9 @@ def main(args):
                 momentum=config.momentum, beta=config.beta,
                 beta1=config.beta1, beta2=config.beta2,
                 epsilon=config.epsilon)
-        
+    
     # Log final test accuracy
-    wandb.log({"test_acc": opt.model.compute_accuracy(X_test, y_test)})
+    wandb.log({"test_accuracy": opt.model.compute_accuracy(X_test, y_test), "_timestamp": datetime.datetime.now().timestamp()})
     opt.model.plot_confusion_matrix(X_test, y_test)
     opt.model.compare_losses(X_test, y_test)
     return opt.model.predict(X_test, config.probab)
@@ -152,16 +150,16 @@ if __name__ == "__main__":
         'method': 'grid',
         'metric': {'name': 'loss', 'goal': 'minimize'},
         'parameters': {
-            "num_layers": {"values": [2, 3, 4]},
-            "hidden_size": {"values": [128, 256]},
-            "activation": {"values": ["relu", "tanh"]},
+            "num_layers": {"values": [3, 4, 5]},
+            "hidden_size": {"values": [32, 64, 128]},
+            "activation": {"values": ["relu", "tanh", "sigmoid"]},
             "weight_init": {"values": ["xavier", "he", "random"]},
             "loss": {"values": ["cross_entropy", "mse"]},
-            "optimizer": {"values": ["sgd", "adam"]},
+            "optimizer": {"values": ["sgd", "nesterov", "rmsprop", "momentum", "adam", "nadam"]},
             "learning_rate": {"values": [0.001, 0.0001]},
-            "batch_size": {"values": [32, 64]},
+            "batch_size": {"values": [16, 32, 64]},
             "epochs": {"values": [10, 20]},
-            "weight_decay": {"values": [0, 0.0001, 0.001]}  # Added weight_decay
+            "weight_decay": {"values": [0, 0.0005, 0.001, 0.5]}
         }
     }
     sweep_id = wandb.sweep(sweep_config, project=args.wandb_project)

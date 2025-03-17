@@ -1,0 +1,95 @@
+  0%|                                                                                                                                                 | 0/10 [00:15<?, ?it/s]
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 167, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 100, in main
+    opt.run((X_train, y_train), (X_test, y_test),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 512, in run
+    self.batch_gradient_descent(traindat, testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 394, in batch_gradient_descent
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 341, in iterate
+    wandb.log({
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 449, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 1873, in log
+    self._log(data=data, step=step, commit=commit)
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 1587, in _log
+    self._partial_history_callback(data, step, commit)
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 1417, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\interface\interface.py", line 684, in publish_partial_history
+    item.value_json = json_dumps_safer_history(v)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\util.py", line 816, in json_dumps_safer_history
+    return dumps(obj, cls=WandBHistoryJSONEncoder, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\util.py", line 779, in default
+    return json.JSONEncoder.default(self, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type time is not JSON serializable
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 167, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 100, in main
+    opt.run((X_train, y_train), (X_test, y_test),
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 512, in run
+    self.batch_gradient_descent(traindat, testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 394, in batch_gradient_descent
+    self.iterate(updator,X,Y,testdat)
+  File "c:\Users\niksh\Desktop\Assign 1\src\model_arch.py", line 341, in iterate
+    wandb.log({
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 449, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 1873, in log
+    self._log(data=data, step=step, commit=commit)
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 1587, in _log
+    self._partial_history_callback(data, step, commit)
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 1417, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\sdk\interface\interface.py", line 684, in publish_partial_history
+    item.value_json = json_dumps_safer_history(v)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\util.py", line 816, in json_dumps_safer_history
+    return dumps(obj, cls=WandBHistoryJSONEncoder, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\Desktop\Assign 1\venv\Lib\site-packages\wandb\util.py", line 779, in default
+    return json.JSONEncoder.default(self, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\niksh\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type time is not JSON serializable

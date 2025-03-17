@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 169, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 102, in main
+    opt.run((X_train, y_train), (X_test, y_test),
+TypeError: optimizers.run() got an unexpected keyword argument 'momentum'
+Traceback (most recent call last):
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 169, in <module>
+    main(args)
+  File "c:\Users\niksh\Desktop\Assign 1\src\train.py", line 102, in main
+    opt.run((X_train, y_train), (X_test, y_test),
+TypeError: optimizers.run() got an unexpected keyword argument 'momentum'

@@ -1,0 +1,15 @@
+{"time":"2025-03-17T12:26:58.189091+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"C:\\Users\\niksh\\Desktop\\Assign 1\\wandb\\run-20250317_122658-dz4vhrhm\\logs\\debug-core.log"}
+{"time":"2025-03-17T12:26:58.3462227+05:30","level":"INFO","msg":"created new stream","id":"dz4vhrhm"}
+{"time":"2025-03-17T12:26:58.3462227+05:30","level":"INFO","msg":"stream: started","id":"dz4vhrhm"}
+{"time":"2025-03-17T12:26:58.3468033+05:30","level":"INFO","msg":"handler: started","stream_id":"dz4vhrhm"}
+{"time":"2025-03-17T12:26:58.3468033+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"dz4vhrhm"}
+{"time":"2025-03-17T12:26:58.3468033+05:30","level":"INFO","msg":"sender: started","stream_id":"dz4vhrhm"}
+{"time":"2025-03-17T12:26:58.6653049+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T12:27:40.9551655+05:30","level":"INFO","msg":"stream: closing","id":"dz4vhrhm"}
+{"time":"2025-03-17T12:27:40.9551655+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T12:27:40.9575244+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T12:27:42.7223073+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T12:27:43.036259+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"dz4vhrhm"}
+{"time":"2025-03-17T12:27:43.036259+05:30","level":"INFO","msg":"sender: closed","stream_id":"dz4vhrhm"}
+{"time":"2025-03-17T12:27:43.036259+05:30","level":"INFO","msg":"handler: closed","stream_id":"dz4vhrhm"}
+{"time":"2025-03-17T12:27:43.0368285+05:30","level":"INFO","msg":"stream: closed","id":"dz4vhrhm"}

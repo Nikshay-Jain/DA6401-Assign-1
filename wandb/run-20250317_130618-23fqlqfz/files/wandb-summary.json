@@ -1,0 +1,1 @@
+{"hidden_size":32,"epoch":1,"val_accuracy":0.1103,"batch_size":16,"_runtime":9.2931698,"_step":9,"num_layers":3,"train_accuracy":0.11238333333333334,"_wandb":{"runtime":9},"weight_decay":0,"train_loss":3.2895643453158563,"test_accuracy":11.03,"learning_rate":0.001,"_timestamp":1.7421969880410678e+09,"val_loss":3.2908576983723252}
